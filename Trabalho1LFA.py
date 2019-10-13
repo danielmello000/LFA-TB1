@@ -60,9 +60,9 @@ for estado in afd.estados:  # percorre a lista de estados do afd
         afd.estados.append(transicao_afd_1[2])
     # Adiciona a lista de transicoes do afd as duas transicoes
     if transicao_afd_0[2]:
-        afd.transicoes.append(' '.join(transicao_afd_0));
+        afd.transicoes.append(' '.join(transicao_afd_0))
     if transicao_afd_1[2]:
-        afd.transicoes.append(' '.join(transicao_afd_1));
+        afd.transicoes.append(' '.join(transicao_afd_1))
 
 # Seta os estados finais do afd
 afd.es_finais = estados_finais_afd(afnd.es_finais, afd.estados)
